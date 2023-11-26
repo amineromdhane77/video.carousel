@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="main-section">
+        <nav>
+            <a href="/" class="logo">Travel</a>
+            <ul>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/about" >About</a></li>
+                <li><a href="/destination" >Destination</a></li>
+                <li><a href="/blog" >Blog</a></li>
+                <li><a href="/gallery" >Gallery</a></li>
+                <li><a href="/contact" >Contact</a></li>
+            </ul>
+        </nav>
+       
+           
+         
+            <div class="hero-section">
+                <div  class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                    <video type="video/mp4" loop autoplay muted plays-inline class="carousel-video">
+                        <source src="images/video.mp4">
+                    </video>
+                    <div class="hero-content-section">
+                        <div class="hero-data">
+                            <div class="hero-tag">
+                                <div class="circle"></div>
+                                Beach experience
+                            </div>
+                            <h1 class="title">
+                                Go & Explore Beaches
+                            </h1>
+                            <p class="hero-desc">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti unde inventore molestiae animi corporis. Hic sint beatae laudantium unde sequi amet eius. Exercitationem non reiciendis dolores aperiam laudantium, reprehenderit voluptates!
+
+                            </p>
+                            <button class="explore-btn">Explore Now</button>
+                        </div>
+                    </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <video type="video/mp4" loop autoplay muted plays-inline class="carousel-video">
+                            <source src="images/video2.mp4">
+                        </video>
+                        <div class="hero-content-section">
+                            <div class="hero-data">
+                                <div class="hero-tag">
+                                    <div class="circle"></div>
+                                    New Zeland   experience
+                                </div>
+                                <h1 class="title">
+                                    Go & Explore New Zeland
+                                </h1>
+                                <p class="hero-desc">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti unde inventore molestiae animi corporis. Hic sint beatae laudantium unde sequi amet eius. Exercitationem non reiciendis dolores aperiam laudantium, reprehenderit voluptates!
+    
+                                </p>
+                                <button class="explore-btn">Explore Now</button>
+                            </div>
+                        </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <video type="video/mp4" loop autoplay muted plays-inline class="carousel-video">
+                                <source src="images/video1.mp4">
+                            </video>
+                            <div class="hero-content-section">
+                                <div class="hero-data">
+                                    <div class="hero-tag">
+                                        <div class="circle"></div>
+                                       Grenade
+                                    </div>
+                                    <h1 class="title">
+                                        Go & Explore Grenade
+                                    </h1>
+                                    <p class="hero-desc">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti unde inventore molestiae animi corporis. Hic sint beatae laudantium unde sequi amet eius. Exercitationem non reiciendis dolores aperiam laudantium, reprehenderit voluptates!
+        
+                                    </p>
+                                    <button class="explore-btn">Explore Now</button>
+                                </div>
+                            </div>
+                              </div>
+                     
+                      </div>
+                    
+                    </div>
+            </div>
+        <div class="hero-carousel-indicator">
+
+            <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/borabora.jpg" alt="Carousel Indicator">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/borabora2.jpg" alt="Carousel Indicator">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/Alhambra3.jpg" alt="Carousel Indicator">
+                  </div>
+                  
+                </div>
+                </div>  
+        </div>
+         
+
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 2,
+        slidesPerView: 6,
+        freeMode: true,
+        watchSlidesProgress: true,
+        autoplay:{
+delay:2500,
+disableOnInteraction:true,
+
+        },
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 2,
+        autoplay:{
+delay:80000,
+disableOnInteraction:true,
+
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+</body>
+</html>
